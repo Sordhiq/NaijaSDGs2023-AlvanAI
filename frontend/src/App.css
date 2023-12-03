@@ -1,0 +1,91 @@
+@keyframes SlideChat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.motion {
+    animation: SlideChat 4s ease-in-out;
+}
+
+.adjust{
+    transform: translate(-50%, -50%);
+}
+
+
+.react-chatbot-kit-chat-container{
+    width: 100%;
+    height: 100%;
+}
+
+.react-chatbot-kit-chat-inner-container {
+    width: 100vw;
+}
+
+.react-chatbot-kit-chat-header {}
+
+.react-chatbot-kit-chat-input-container {
+    width: 100vw !important;
+}
+
+.react-chatbot-kit-chat-message-container {
+    width: 100%;
+}
+
+.react-chatbot-kit-chat-input {
+    width: 100%;
+}
+
+.react-chatbot-kit-chat-input-form {
+    width: 100%;
+}
+
+.react-chatbot-kit-chat-input::placeholder {}
+
+.react-chatbot-kit-chat-btn-send {
+    width: 100%;
+}
+
+.react-chatbot-kit-chat-btn-send-icon {}
+
+.react-chatbot-kit-chat-bot-message-container {
+
+}
+
+.react-chatbot-kit-chat-bot-avatar-container {}
+
+.react-chatbot-kit-chat-bot-avatar-icon {}
+
+.react-chatbot-kit-chat-bot-avatar-letter {}
+
+.react-chatbot-kit-chat-bot-message {
+    margin: 0 !important;
+}
+
+.react-chatbot-kit-chat-bot-message-arrow {}
+
+.react-chatbot-kit-chat-bot-loading-icon-container {}
+
+.chatbot-loader-container {}
+
+#chatbot-loader #chatbot-loader-dot1 {}
+
+#chatbot-loader #chatbot-loader-dot2 {}
+
+#chatbot-loader #chatbot-loader-dot3 {}
+
+.react-chatbot-kit-error {}
+
+.react-chatbot-kit-error-container {}
+
+.react-chatbot-kit-error-header {}
+
+.react-chatbot-kit-error-docs {}
