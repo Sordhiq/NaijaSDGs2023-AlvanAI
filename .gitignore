@@ -1,0 +1,21 @@
+# Ignore virtual environments
+venv/
+
+# Ignore Python bytecode files
+__pycache__/
+
+# Ignore environment files
+.env
+
+# Ignore local configuration files
+instance/
+
+# Ignore local development settings
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore editor-specific files
+.vscode/
+*.sublime*
+*.pycharm*
