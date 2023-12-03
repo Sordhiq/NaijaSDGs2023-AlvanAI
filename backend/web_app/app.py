@@ -26,3 +26,10 @@ if st.button("Send"):
     st.text("AI: " + "a minute...")
     # model_response = get_model_response(user_input)
     # st.text("AI: " + model_response)
+
+# Streamlit main area for displaying chat
+if st.button("Exit"):
+    # st.text("User: " + user_input)
+    st.text("AI: " + "a minute...")
+    # model_response = get_model_response(user_input)
+    # st.text("AI: " + model_response)
