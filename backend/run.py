@@ -11,4 +11,4 @@ init_openai()
 
 if __name__ == '__main__':
     # Run the Flask application
-    app.run(host='51.20.115.7', port=5000)
+    app.run(host='51.20.115.7', port=4000)
