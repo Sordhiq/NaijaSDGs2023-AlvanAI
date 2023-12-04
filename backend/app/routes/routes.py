@@ -27,16 +27,16 @@ def predict_api():
 
         if 'previous_route' in session and session['previous_route'] == VERIFY_ACCOUNT_ROUTE:
             if input_data.lower() == 'yes':
-                response_data = {"request": "POST", "params": {"response": input_data}, "route": ENTER_PIN_ROUTE}
+                response_data = {"redirect":True, "request": "POST", "params": {"response": input_data}, "route": ENTER_PIN_ROUTE}
             else:
                 response_data = extract_info(input_data)
 
         elif 'previous_route' in session and session['previous_route'] == ENTER_PIN_ROUTE:
             if input_data.lower() == 'yes':
-                response_data = {"request": "POST", "params": {"response": input_data}, "route": ENTER_PIN_ROUTE}
+                response_data = {"redirect":True, "request": "POST", "params": {"response": input_data}, "route": ENTER_PIN_ROUTE}
             else:
                 # Extract information or set response based on your logic
-                response_data = {"request": "POST", "params": {"amount": 5000, "account_number": "12345678901", "bank_name": "Zenith Bank"}, "route": VERIFY_ACCOUNT_ROUTE}
+                response_data = {"redirect":True, "request": "POST", "params": {"amount": 5000, "account_number": "12345678901", "bank_name": "Zenith Bank"}, "route": VERIFY_ACCOUNT_ROUTE}
 
         else:
             result = extract_info(input_data)
@@ -64,7 +64,7 @@ def extract_info(text):
         amount = float(match.group(2)) if match.group(2) else None
         bank_name = match.group(3) if match.group(3) else ""
 
-        return {"request": "POST", "params": {"amount": amount, "account_number": account_number, "bank_name": bank_name}, "route": VERIFY_ACCOUNT_ROUTE}
+        return {"redirect":True, "request": "POST", "params": {"amount": amount, "account_number": account_number, "bank_name": bank_name}, "route": VERIFY_ACCOUNT_ROUTE}
 
     else:
         bank_name = ""  # Placeholder value
