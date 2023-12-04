@@ -9,8 +9,8 @@ logging.basicConfig(level=logging.DEBUG)
 routes_bp = Blueprint('routes', __name__)
 
 # Define constants for route URLs
-VERIFY_ACCOUNT_ROUTE = "http://51.20.115.7:3000/api/v1/secure/transfer/verify-account"
-ENTER_PIN_ROUTE = "http://51.20.115.7:3000/api/v1/secure/transfer/is-enter-pin"
+VERIFY_ACCOUNT_ROUTE = "http://13.49.245.110:3000/api/v1/secure/transfer/verify-account"
+ENTER_PIN_ROUTE = "http://13.49.245.110:3000/api/v1/secure/transfer/is-enter-pin"
 
 session = {}
 
